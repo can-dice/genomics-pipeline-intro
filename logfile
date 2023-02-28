@@ -1,0 +1,90 @@
+/home/can-dice/miniconda3/envs/genomics-pipeline-intro/bin:/home/can-dice/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0:/mnt/c/windows/System32/OpenSSH:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/candi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/candi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/candi/AppData/Local/Programs/MiKTeX/miktex/bin/x64:/snap/bin:/home/can-dice/AdvBio/genomics-pipeline-intro/sratoolkit.3.0.1-ubuntu64/bin
+Downloading SRA files from the given list of accessions
+
+
+
+
+
+
+
+
+SRA files were downloaded in current directory
+
+Done
+
+Converting SRA files to fastq.gz
+SRR11621811.sra
+SRR11772640.sra
+SRR11851929.sra
+SRR11953870.sra
+SRR11954244.sra
+SRR12045940.sra
+SRR12272284.sra
+SRR12291581.sra
+Read 383155 spots for SRR11621811.sra
+Written 383155 spots for SRR11621811.sra
+Read 210832 spots for SRR11772640.sra
+Written 210832 spots for SRR11772640.sra
+Read 229852 spots for SRR11851929.sra
+Written 229852 spots for SRR11851929.sra
+Read 242591 spots for SRR11953870.sra
+Written 242591 spots for SRR11953870.sra
+Read 2128536 spots for SRR11954244.sra
+Written 2128536 spots for SRR11954244.sra
+Read 540814 spots for SRR12045940.sra
+Written 540814 spots for SRR12045940.sra
+Read 185090 spots for SRR12272284.sra
+Written 185090 spots for SRR12272284.sra
+Read 166349 spots for SRR12291581.sra
+Written 166349 spots for SRR12291581.sra
+Trimming downloaded Illumina datasets with fastp.
+
+SRR11621811.fastq.gz
+SRR11772640.fastq.gz
+SRR11851929.fastq.gz
+SRR11953870.fastq.gz
+SRR11954244.fastq.gz
+SRR12045940.fastq.gz
+SRR12272284.fastq.gz
+SRR12291581.fastq.gz
+Indexing Reference
+
+Aligning illumina datasets againts reference with minimap, using n threads.
+
+SRR11621811.fastq.gz.fastp.gz
+SRR11772640.fastq.gz.fastp.gz
+SRR11851929.fastq.gz.fastp.gz
+SRR11953870.fastq.gz.fastp.gz
+SRR11954244.fastq.gz.fastp.gz
+SRR12045940.fastq.gz.fastp.gz
+SRR12272284.fastq.gz.fastp.gz
+SRR12291581.fastq.gz.fastp.gz
+Renaming files in bash
+
+Indexing BAM files.
+
+SRR11621811.bam
+SRR11772640.bam
+SRR11851929.bam
+SRR11953870.bam
+SRR11954244.bam
+SRR12045940.bam
+SRR12272284.bam
+SRR12291581.bam
+Performing Variant Calling with freebayes:
+
+SRR11621811.bam
+SRR11772640.bam
+SRR11851929.bam
+SRR11953870.bam
+SRR11954244.bam
+SRR12045940.bam
+SRR12272284.bam
+SRR12291581.bam
+Merging variants using jacquard
+
+for information, please see: https://jacquard.readthedocs.io/en/v0.42/overview.html#why-would-i-use-jacquard
+
+Merge VCFs using jacquard
+
+Time taken: 1618
